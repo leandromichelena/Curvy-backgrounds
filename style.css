@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    font-family: Rubik;
+    color: white;
+    background-color: #202731;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400;
+    padding: 100px 20vw;
+}
+
+/* Winter style color palette from https://coolors.co/ */
+
+.color1 {
+    background-color: #012A4A;
+    z-index: -2;
+}
+
+.color2 {
+    background-color: #013A63;
+    z-index: -2;
+}
+
+.color3 {
+    padding-top: 250px;
+    background-color: #01497C;
+}
+
+.color4 {
+    background-color: #014F86;
+}
+
+.color5 {
+    background-color: #2A6F97;
+}
+
+.color6 {
+    background-color: #2C7DA0;
+}
+
+.color7 {
+    background-color: #468FAF;
+}
+
+.color8 {
+    background-color: #61A5C2;
+}
+
+.bubble::after {
+    content: '';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    background-color: #013A63;
+    height: 85%;
+}
+
+.custom-shape-divider-top-1710860963 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    padding-top: 50px;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1710860963 svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 180px;
+}
+
+.custom-shape-divider-top-1710860963 .shape-fill {
+    fill: #013A63;
+}
+
+.custom-shape-divider-bottom-1710862487 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1710862487 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 265px;
+}
+
+.custom-shape-divider-bottom-1710862487 .shape-fill {
+    fill: #014F86;
+}
+
+.custom-shape-divider-bottom-1710862770 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1710862770 svg {
+    position: relative;
+    display: block;
+    width: calc(235% + 1.3px);
+    height: 195px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1710862770 .shape-fill {
+    fill: #2A6F97;
+}
+
+.custom-shape-divider-top-1710867171 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1710867171 svg {
+    position: relative;
+    display: block;
+    width: calc(210% + 1.3px);
+    height: 84px;
+}
+
+.custom-shape-divider-top-1710867171 .shape-fill {
+    fill: #2C7DA0;
+}
+
+.spacer {
+    aspect-ratio: 960/250;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layered-waves {
+    background-image: url('./layered-waves-haikei.svg');
+}
+
+.layered-waves2 {
+    background-image: url('./layered-waves-haikei2.svg');
+}
+
+.flip {
+    transform: rotate(180deg);
+}
+
+.animation {
+    position: absolute;
+    z-index: 0;
+    transform: translateY(-30%);
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+}
+
+.animation-content {
+    z-index: 1;
+    height: 280px;
+}
